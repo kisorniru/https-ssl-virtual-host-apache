@@ -33,7 +33,11 @@ $ sudo openssl req -x509 -days 365 -newkey rsa:2048 -keyout /home/your-pc-name/s
   Email Address []: admin@localhost-1.com*change
 ```
 
-* Now open your virtualhost and edit there
+* Now open your virtualhost
+```sh
+$ sudo gedit /etc/apache2/sites-available/localhost-1.conf
+```
+*  And edit
 ```sh
 <VirtualHost *:443>
 
